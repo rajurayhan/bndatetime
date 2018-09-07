@@ -3,7 +3,7 @@
 This package Converts Date Time to Bangla Date Time using EasyBanglaDate. 
 
 
-# Dependency
+## Dependency
 
  -  Laravel >=5.2 
  - ronisaha/easy-bangla-date
