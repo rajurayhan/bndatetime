@@ -1,4 +1,4 @@
-# Bangla Date Time Converter!
+# Bangla Date Time Converter for Laravel!
 
 This package Converts Date Time to Bangla Date Time using EasyBanglaDate. 
 
