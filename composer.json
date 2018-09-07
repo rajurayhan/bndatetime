@@ -1,0 +1,19 @@
+{
+    "name": "rajurayhan/bndatetime",
+    "description": "English to Bangla Date Time Converter for Laravel.",
+    "type": "library",
+    "license": "MIT",
+    
+    "authors":[
+        {
+            "name"  : "Raju Rayhan", 
+            "email" : "raju.rayhan@yandex.com"
+        }
+    ], 
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Rajurayhan\\Bndatetime\\": "src/"
+        }
+    }
+}
