@@ -17,28 +17,36 @@ use DateTimeZone;
 
 class BnDateTimeConverter
 {
-    public function getConvertedDateTime($date, $format){
+    public function getConvertedDateTime($date, $type, $format){
         // BnBn
         // EnBn
         // BnEn
         // EnEn
+        if($format == ''){
+            if($type == 'BnBn' || $type == 'BnEn'){
+                $format = 'l jS F Y b h:i:s';
+            }
+            else{
+                $format = 'l jS F Y b h:i:s a';
+            }
+        }
         $bangla = new CoreBnDateTime($date, new DateTimeZone('Asia/Dhaka'));
         $output     = '';
-        switch ($format) {
+        switch ($type) {
             case 'BnBn':
-                $output     = $bangla->format('l jS F Y b h:i:s') . PHP_EOL ;
+                $output     = $bangla->format($format) . PHP_EOL ;
                 break;
             
             case 'EnBn':
-                $output     = $bangla->enFormat('l jS F Y h:i:s a') . PHP_EOL;
+                $output     = $bangla->enFormat($format) . PHP_EOL;
                 break;
 
             case 'BnEn':
-                $output     = $bangla->getDateTime()->format('l jS F Y b h:i:s'). PHP_EOL;
+                $output     = $bangla->getDateTime()->format($format). PHP_EOL;
                 break;
             
             case 'EnEn':
-                $output     = $bangla->getDateTime()->enFormat('l jS F Y h:i:s A') . PHP_EOL;
+                $output     = $bangla->getDateTime()->enFormat($format) . PHP_EOL;
                 break;
             
             default:
