@@ -15,7 +15,7 @@ Install EasyBanglaDate in your Project via composer
     composer require ronisaha/easy-bangla-date
 Install Bangla Date Converter via Composer
 
-    composer require rajurayhan/bndatetime
+    composer require rajurayhan/bndatetime dev-master
 
 ## Usage
 
