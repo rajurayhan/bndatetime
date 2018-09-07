@@ -1,6 +1,6 @@
 # Bangla Date Time Converter!
 
-This package Convert Date Time to Bangla Date Time using EasyBanglaDate. 
+This package Converts Date Time to Bangla Date Time using EasyBanglaDate. 
 
 
 # Dependency
