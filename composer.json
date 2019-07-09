@@ -11,6 +11,9 @@
         }
     ], 
     "minimum-stability": "dev",
+    "require": {
+        "ronisaha/easy-bangla-date": "dev-master"
+    },
     "autoload": {
         "psr-4": {
             "Rajurayhan\\Bndatetime\\": "src/"
