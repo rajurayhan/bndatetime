@@ -10,9 +10,6 @@ This package Converts Date Time to Bangla Date Time using EasyBanglaDate.
 
 ## Installation
 
-Install EasyBanglaDate in your Project via composer
-
-    composer require ronisaha/easy-bangla-date
 Install Bangla Date Converter via Composer
 
     composer require rajurayhan/bndatetime dev-master
